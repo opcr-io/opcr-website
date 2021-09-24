@@ -54,6 +54,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         appId: process.env.REACT_APP_ALGOLIA_APP_ID,
       },
       */
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+      },
       navbar: {
         style: 'dark',
         logo: {
