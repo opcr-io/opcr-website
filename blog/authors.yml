@@ -1,17 +1,17 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+omri:
+  name: Omri Gazitt
+  title: CEO @ Aserto
+  url: https://github.com/ogazitt
+  image_url: https://github.com/ogazitt.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+vlad:
+  name: Vlad Iovanov
+  title: Principal Engineer @ Aserto
+  url: https://github.com/viovanov
+  image_url: https://github.com/viovanov.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+gert:
+  name: Gert Drapers
+  title: CTO @ Aserto
+  url: https://github.com/gertd
+  image_url: https://github.com/gertd.png
