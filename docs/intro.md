@@ -2,34 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+The **Open Policy Registry** is an OCIv2-compatible container registry for policy images. 
+
+It consists of two components:
+* The `policy` CLI, which is used to manage policy images, and is modeled after `docker`
+* The `opcr.io` registry, which is a hosted OCIv2-compatible container registry that is focused 
+exclusively on policy image content
 
 ## Getting Started
 
-Get started by **creating a new site**.
+### Create an opcr.io account and organization
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+You can use `policy` CLI with other container registries, but a good place to start is 
+to [create](/docs/opcr/create-account) an `opcr.io` account. 
 
-## Generate a new site
+### Download the CLI
 
-Generate a new Docusaurus site using the **classic template**:
+To get started, you'll need to [download](/docs/cli/download) the `policy` CLI.
 
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
 
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
