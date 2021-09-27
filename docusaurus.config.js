@@ -73,7 +73,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/aserto-dev/opcr-website',
+            href: 'https://github.com/aserto-dev/policy',
             label: 'GitHub',
             position: 'right',
           },
@@ -103,7 +103,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/openpolicyregistry',
+                href: 'https://twitter.com/openpolicyreg',
               },
             ],
           },
@@ -116,12 +116,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/aserto-dev/opcr-website',
+                href: 'https://github.com/aserto-dev/policy',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} - built with love by Aserto.`,
+        logo: {
+          alt: 'Aserto Logo',
+          src: 'Aserto-logo-color-120px.png',
+          href: 'https://aserto.com',
+        },    
+        copyright: `Copyright © ${new Date().getFullYear()} - built with ❤️ by Aserto.`
       },
       prism: {
         theme: lightCodeTheme,

@@ -21,7 +21,9 @@ const FeatureDetailsList = [
     description: (
       <pre>
         $ cosign init<br/>
-        $ ...<br/>
+        $ cosign generate-key-pair<br/>
+        $ cosign sign -key cosign.key mytenant/peoplefinder:1.0.0<br/>
+        $ cosign verify -key cosign.pub mytenant/peoplefinder:1.0.0<br/>
       </pre>
     ),
   },
@@ -30,7 +32,7 @@ const FeatureDetailsList = [
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <pre>
-        $ policy run peoplefinder:1.0.0<br/>
+        $ policy run mytenant/peoplefinder:1.0.0<br/>
         $ input {`‘{“foo”: “bar”}’`}<br/>
         $ query data<br/>
       </pre>
