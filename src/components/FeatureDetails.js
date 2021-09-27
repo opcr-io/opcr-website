@@ -5,7 +5,7 @@ import styles from './FeatureDetails.module.css';
 const FeatureDetailsList = [
   {
     title: 'Build, tag, push, and pull policy images',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/Version-policies.svg').default,
     description: (
       <pre>
         $ policy build . -t mytenant/peoplefinder:1.0.0<br/>
@@ -17,7 +17,7 @@ const FeatureDetailsList = [
   },
   {
     title: 'Sign layers and verify signatures',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/Sign-policy.svg').default,
     description: (
       <pre>
         $ cosign init<br/>
@@ -29,7 +29,7 @@ const FeatureDetailsList = [
   },
   {
     title: 'Test your policy version with a read-eval-print loop',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/Test.svg').default,
     description: (
       <pre>
         $ policy run mytenant/peoplefinder:1.0.0<br/>
@@ -40,11 +40,12 @@ const FeatureDetailsList = [
   },
 ];
 
-function FeatureDetail({Svg, title, description, flip}) {
-  console.log(flip)
+function FeatureDetail({Svg, title, description, flip, index}) {
+  const id = `feature_${index}`
+  console.log(id)
   return (
     flip ?
-      <div className={`${styles.stripe} row padding-vert--md`}>
+      <div id={id} className={`${styles.stripe} row padding-vert--xl`}>
         <div className={clsx('col col--9', styles.featureDetailsText)}>
           <div className='padding-horiz--md'>
             <h3>{title}</h3>
@@ -57,7 +58,7 @@ function FeatureDetail({Svg, title, description, flip}) {
           </div>
         </div>
       </div> :
-      <div className={`row padding-vert--md`}>
+      <div id={id} className={`row padding-vert--xl`}>
         <div className={clsx('col col--3')}>
           <div className="text--center">
             <Svg className={styles.featureDetailsSvg} alt={title} />
@@ -78,7 +79,7 @@ export default function FeatureDetails() {
     <section className={styles.featureDetails}>
       <div className="container">
         {FeatureDetailsList.map((props, idx) => (
-          <FeatureDetail key={idx} flip={idx % 2} {...props} />
+          <FeatureDetail key={idx} index={idx} flip={idx % 2} {...props} />
         ))}
       </div>
     </section>

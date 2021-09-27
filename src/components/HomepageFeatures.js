@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Version your policies',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/Version-policies.svg').default,
     description: (
       <>
         Tag your policies with a semantic version, just like you would a docker container
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Sign your policies',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/Sign-policy.svg').default,
     description: (
       <>
         Sign your policy layers using&nbsp;
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Test policy versions',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/Test.svg').default,
     description: (
       <>
         Run a local read-eval-print loop to test your versioned policy, 
@@ -37,13 +37,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, index}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4')} onClick={() => document.getElementById(`feature_${index}`).scrollIntoView({ behavior: 'smooth' })}>
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--center padding-horiz--md margin-top--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
@@ -57,7 +57,7 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+            <Feature key={idx} index={idx} {...props} />
           ))}
         </div>
       </div>

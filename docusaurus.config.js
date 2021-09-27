@@ -57,6 +57,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         style: 'dark',
