@@ -5,7 +5,7 @@ import styles from './FeatureDetails.module.css';
 const FeatureDetailsList = [
   {
     title: 'Build, tag, push, and pull policy images',
-    Svg: require('../../static/img/Version-policies.svg').default,
+    Svg: require('../../static/img/Section-1.svg').default,
     description: (
       <pre>
         $ policy build . -t mytenant/peoplefinder:1.0.0<br/>
@@ -17,7 +17,7 @@ const FeatureDetailsList = [
   },
   {
     title: 'Sign layers and verify signatures',
-    Svg: require('../../static/img/Sign-policy.svg').default,
+    Svg: require('../../static/img/Section-2.svg').default,
     description: (
       <pre>
         $ cosign init<br/>
@@ -29,7 +29,7 @@ const FeatureDetailsList = [
   },
   {
     title: 'Test your policy version with a read-eval-print loop',
-    Svg: require('../../static/img/Test.svg').default,
+    Svg: require('../../static/img/Section-3.svg').default,
     description: (
       <pre>
         $ policy run mytenant/peoplefinder:1.0.0<br/>
