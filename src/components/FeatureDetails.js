@@ -33,8 +33,8 @@ const FeatureDetailsList = [
     description: (
       <pre>
         $ policy run mytenant/peoplefinder:1.0.0<br/>
-        $ input {`‘{“foo”: “bar”}’`}<br/>
-        $ query data<br/>
+        &rt;&rt; input {`‘{“foo”: “bar”}’`}<br/>
+        &rt;&rt; query input<br/>
       </pre>
     ),
   },

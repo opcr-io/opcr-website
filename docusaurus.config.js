@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Open Policy Registry',
-  tagline: 'A Docker-inspired workflow for your OPA policies',
+  tagline: 'A Docker-inspired workflow for OPA policies',
   url: 'https://openpolicyregistry.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
