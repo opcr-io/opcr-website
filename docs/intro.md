@@ -24,4 +24,4 @@ To get started, you'll need to [download](/docs/cli/download) the `policy` CLI.
 
 ### Tutorial
 
-Follow our 3 minute [tutorial](/docs/tutorial) to get a flavor for what OPCR can do for you.
+Follow our 5 minute [tutorial](/docs/tutorial) to get a flavor for what OPCR can do for you.

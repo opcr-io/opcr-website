@@ -14,5 +14,19 @@ policy tag <image-name> <organization-name>/<repository-name>:<tag>
 ## Example
 
 ```bash
-policy tag aserto/peoplefinder:1.0.0 aserto/peoplefinder:latest
+$ policy tag omrigazitt1/peoplefinder:1.0.0 omrigazitt1/peoplefinder:latest
+
+Tagging image.
+reference: omrigazitt1/peoplefinder:latest
+```
+
+Check out the new tag:
+
+```bash
+$ policy list
+
+|        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
+|--------------------------|--------|-------|---------------|
+| omrigazitt1/peoplefinder | 1.0.0  | 555 B | 5 minutes ago |
+| omrigazitt1/peoplefinder | latest | 555 B | 5 minutes ago |
 ```

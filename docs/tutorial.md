@@ -28,7 +28,7 @@ $ cd policy-peoplefinder
 ## Build the policy container image
 
 ```bash
-policy build . -t <your_organization>/peoplefinder:1.0.0
+$ policy build . -t <your_organization>/peoplefinder:1.0.0
 
 
 Created new image.
@@ -148,7 +148,7 @@ $ cosign verify -key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
 ## Run the read-eval-print loop for this policy version
 
 ```bash
-$ policy run datadude/peoplefinder:1.0.0
+$ policy run omrigazitt1/peoplefinder:1.0.0
 
 Pulling.
 ref: omrigazitt1/peoplefinder:1.0.0
