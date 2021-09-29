@@ -1,11 +1,9 @@
 ---
 slug: welcome
-title: Welcome
+title: Welcome to the Open Policy Registry project!
 authors: [vlad, gert, omri]
 tags: [opr, hello, opcr]
 ---
-
-# Welcome to the Open Policy Registry project!
 
 ## A brief history
 
@@ -28,7 +26,22 @@ CLI, you can *build*, *tag*, *push*, and *pull* policy images just like you do w
 
 By representing policy images as OCIv2 containers, you can push and pull them into any OCIv2-compatible 
 registry. But we thought it would be useful to have a container registry that would focus 
-exclusively on policies as a content type. 
+exclusively on policies as a container image type. 
 
 We built `opcr.io` as a container registry for round-tripping policy image containers.
 
+## Bringing together three CNCF ecosystems
+
+We believe that as a "meta-project", OPCR brings together three existing CNCF ecosystems, and makes them "better together":
+
+* OPA: Today, OPA’s packaging format is a tarball. Using the OCI container format to package OPA policies allows developers to tag, version, add metadata, and sign layers of a policy, much like they can any OCI container.
+* Sigstore/cosign: Using cosign to sign and verify signatures for OPCR container layers brings this value to the OPA ecosystem.
+* OCI: formalizing a media type for OPA containers creates another valuable use-case for the OCIv2 image format.
+
+## We'd love your feedback
+
+We'd love to hear from you! Tweet / DM us at @openpolicyreg or find us in our [Slack](https://asertocommunity.slack.com/join/shared_invite/zt-p06gin84-xNswWpTGyPDPxCz0LMux3g#/shared-invite/email)!
+
+## Happy hacking!
+
+![opcr](/img/logo.png)
