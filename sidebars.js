@@ -5,6 +5,7 @@ module.exports = {
   // create a sidebar manually
   sidebar: [
     'intro',
+    'tutorial',
     {
       type: 'category',
       label: 'Open Policy Registry',

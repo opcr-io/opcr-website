@@ -22,4 +22,6 @@ to [create](/docs/opcr/create-account) an `opcr.io` account.
 
 To get started, you'll need to [download](/docs/cli/download) the `policy` CLI.
 
+### Tutorial
 
+Follow our 3 minute [tutorial](/docs/tutorial) to get a flavor for what OPCR can do for you.
