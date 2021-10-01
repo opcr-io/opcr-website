@@ -7,7 +7,7 @@ const FeatureDetailsList = [
     title: 'Build, tag, push, and pull policy images',
     Svg: require('../../static/img/Section-1.svg').default,
     description: (
-      <pre>
+      <pre className={styles.featureDetailsCode}>
         $ policy build . -t mytenant/peoplefinder:1.0.0<br/>
         $ policy tag mytenant/peoplefinder:1.0.0 mytenant/peoplefinder<br/>
         $ policy push mytenant/peoplefinder<br/>
@@ -19,7 +19,7 @@ const FeatureDetailsList = [
     title: 'Sign layers and verify signatures',
     Svg: require('../../static/img/Section-2.svg').default,
     description: (
-      <pre>
+      <pre className={styles.featureDetailsCode}>
         $ cosign init<br/>
         $ cosign generate-key-pair<br/>
         $ cosign sign -key cosign.key mytenant/peoplefinder:1.0.0<br/>
@@ -31,10 +31,10 @@ const FeatureDetailsList = [
     title: 'Test your policy version with a read-eval-print loop',
     Svg: require('../../static/img/Section-3.svg').default,
     description: (
-      <pre>
+      <pre className={styles.featureDetailsCode}>
         $ policy run mytenant/peoplefinder:1.0.0<br/>
-        &rt;&rt; input {`‘{“foo”: “bar”}’`}<br/>
-        &rt;&rt; query input<br/>
+        {`>> ‘{“foo”: “bar”}’`}<br/>
+        {`>> querty input`}<br/>
       </pre>
     ),
   },
