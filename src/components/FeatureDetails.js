@@ -33,7 +33,7 @@ const FeatureDetailsList = [
     description: (
       <pre className={styles.featureDetailsCode}>
         $ policy run mytenant/peoplefinder:1.0.0<br/>
-        {`>> ‘{“foo”: “bar”}’`}<br/>
+        {`>> input ‘{“foo”: “bar”}’`}<br/>
         {`>> query input`}<br/>
       </pre>
     ),
