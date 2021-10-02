@@ -15,9 +15,18 @@
   align-items: center;
 }
 
-.featureDetailsCode {
-  width: calc(100vw - 4rem);
-  overflow-x: scroll;
+@media screen and (max-width: 996px) {
+  .featureDetailsCode {
+    width: calc(100vw - 4rem);
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  .featureDetailsCode {
+    width: 100%;
+    overflow-x: scroll;
+  }
 }
 
 .stripe {
