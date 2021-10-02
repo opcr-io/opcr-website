@@ -10,6 +10,8 @@ Much like exporting images with `docker`, the `policy` CLI allows you to export 
 policy save <organization-name>/<repository-name>:<tag>
 ```
 
+This command will save the policy to a file called `bundle.tar.gz` in the current directory.
+
 ## Example
 
 ```bash

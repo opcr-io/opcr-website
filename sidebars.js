@@ -19,6 +19,7 @@ module.exports = {
       label: 'Using the CLI',
       items: [
         'cli/download',
+        'cli/login',
         'cli/build',
         'cli/list',
         'cli/tag',
