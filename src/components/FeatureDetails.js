@@ -8,10 +8,10 @@ const FeatureDetailsList = [
     Svg: require('../../static/img/Section-1.svg').default,
     description: (
       <pre className={styles.featureDetailsCode}>
-        $ policy build . -t mytenant/peoplefinder:1.0.0<br/>
-        $ policy tag mytenant/peoplefinder:1.0.0 mytenant/peoplefinder<br/>
-        $ policy push mytenant/peoplefinder<br/>
-        $ policy pull mytenant/peoplefinder<br/>
+        $ policy build . -t myorg/peoplefinder:1.0.0<br/>
+        $ policy tag myorg/peoplefinder:1.0.0 myorg/peoplefinder<br/>
+        $ policy push myorg/peoplefinder<br/>
+        $ policy pull myorg/peoplefinder<br/>
       </pre>
     ),
   },
@@ -22,8 +22,8 @@ const FeatureDetailsList = [
       <pre className={styles.featureDetailsCode}>
         $ cosign init<br/>
         $ cosign generate-key-pair<br/>
-        $ cosign sign -key cosign.key mytenant/peoplefinder:1.0.0<br/>
-        $ cosign verify -key cosign.pub mytenant/peoplefinder:1.0.0<br/>
+        $ cosign sign -key cosign.key myorg/peoplefinder:1.0.0<br/>
+        $ cosign verify -key cosign.pub myorg/peoplefinder:1.0.0<br/>
       </pre>
     ),
   },
@@ -32,7 +32,7 @@ const FeatureDetailsList = [
     Svg: require('../../static/img/Section-3.svg').default,
     description: (
       <pre className={styles.featureDetailsCode}>
-        $ policy run mytenant/peoplefinder:1.0.0<br/>
+        $ policy run myorg/peoplefinder:1.0.0<br/>
         {`>> input ‘{“foo”: “bar”}’`}<br/>
         {`>> query input`}<br/>
       </pre>

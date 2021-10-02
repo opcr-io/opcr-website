@@ -76,6 +76,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             href: 'https://github.com/opcr-io/policy',
             label: 'GitHub',
+            position: 'left',
+          },
+          {
+            to: 'https://openpolicyregistry.io',
+            label: 'Sign in',
             position: 'right',
           },
         ],
@@ -86,8 +91,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Docs',
             items: [
               {
-                label: 'Docs',
+                label: 'Introduction',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Tutorial',
+                to: '/docs/tutorial',
               },
             ],
           },
@@ -95,16 +104,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/open-policy-registry',
-              },
-              {
                 label: 'Slack',
                 href: 'https://asertocommunity.slack.com/join/shared_invite/zt-p06gin84-xNswWpTGyPDPxCz0LMux3g#/shared-invite/email',
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/openpolicyreg',
+              },
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/open-policy-registry',
               },
             ],
           },
