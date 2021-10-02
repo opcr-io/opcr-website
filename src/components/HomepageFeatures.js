@@ -39,7 +39,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description, index}) {
   return (
-    <div className={clsx('col col--4')} onClick={() => document.getElementById(`feature_${index}`).scrollIntoView({ behavior: 'smooth' })}>
+    <div className={clsx('col col--4 margin-vert--lg')} onClick={() => document.getElementById(`feature_${index}`).scrollIntoView({ behavior: 'smooth' })}>
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>

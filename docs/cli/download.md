@@ -4,14 +4,19 @@ sidebar_label: Download the CLI
 
 # Download the CLI
 
-## brew
+`policy` is available on Linux, macOS and Windows platforms.
 
-On Mac and Linux systems, `policy` is available as a `brew` package.
+* Binaries for Linux, Windows and Mac are available as tarballs in the [release](https://github.com/opcr-io/policy/releases) page.
 
-```bash
-brew tap aserto-dev/tap
-brew install policy
-```
+* Via Homebrew for macOS or LinuxBrew for Linux
 
-## Windows
+   ```shell
+   brew install policy
+   ```
 
+* Via a GO install
+
+  ```shell
+  # NOTE: The dev version will be in effect!
+  go get -u github.com/opcr-io/policy
+  ```

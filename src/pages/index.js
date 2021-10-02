@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import FeatureDetails from '../components/FeatureDetails';
+const Svg = require('../../static/img/Lottie-200.svg').default;
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -14,6 +15,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <Svg className={styles.heroSvg} alt={siteConfig.title} />
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

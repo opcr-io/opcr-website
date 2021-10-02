@@ -23,3 +23,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroSvg {
+  height: 200px;
+  width: 200px;
+}
