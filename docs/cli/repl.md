@@ -64,72 +64,31 @@ Input set.
     ]
   }
 ]
->> query data
+>> query "x = data.system.bundles"
 [
   {
     "expressions": [
       {
-        "value": {
-          "peoplefinder": {
-            "DELETE": {
-              "api": {
-                "users": {
-                  "__id": {
-                    "allowed": false,
-                    "enabled": false,
-                    "visible": false
-                  }
-                }
-              }
-            },
-            "GET": {
-              "api": {
-                "users": {
-                  "__id": {
-                    "allowed": true,
-                    "enabled": true,
-                    "visible": true
-                  },
-                  "allowed": true,
-                  "enabled": true,
-                  "visible": true
-                }
-              }
-            },
-            "POST": {
-              "api": {
-                "users": {
-                  "__id": {
-                    "allowed": false,
-                    "enabled": false,
-                    "visible": true
-                  },
-                  "allowed": false,
-                  "enabled": false,
-                  "visible": false
-                }
-              }
-            },
-            "PUT": {
-              "api": {
-                "users": {
-                  "__id": {
-                    "allowed": false,
-                    "enabled": true,
-                    "visible": true
-                  }
-                }
-              }
-            }
-          }
-        },
-        "text": "data",
+        "value": true,
+        "text": "x = data.system.bundles",
         "location": {
           "row": 1,
           "col": 1
         }
       }
-    ]
+    ],
+    "bindings": {
+      "x": {
+        "/Users/ogazitt/.policy/policies-root/blobs/sha256/84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9": {
+          "manifest": {
+            "revision": "",
+            "roots": [
+              "peoplefinder"
+            ]
+          }
+        }
+      }
+    }
   }
 ]
 >>
