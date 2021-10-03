@@ -19,6 +19,6 @@ $ policy pull omrigazitt1/peoplefinder:1.0.0
 Pulling.
 ref: omrigazitt1/peoplefinder:1.0.0
 
-Pulled ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Pulled ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```
