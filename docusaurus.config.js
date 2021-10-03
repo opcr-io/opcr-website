@@ -11,7 +11,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'aserto-dev',
+  organizationName: 'opcr-io',
   projectName: 'opcr-website',
 
   plugins: [
@@ -25,13 +25,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/aserto-dev/opcr-website/edit/main/',
+          editUrl: 'https://github.com/opcr-io/opcr-website/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/aserto-dev/opcr-website/edit/main/',
+            'https://github.com/opcr-io/opcr-website/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

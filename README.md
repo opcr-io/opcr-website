@@ -1,14 +1,16 @@
-# Website
+# OPCR Website
+
+This is the source repo for the Open Policy Registry (OPCR) [landing page](https://openpolicyregistry.io) and documentation site.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## Installation
 
 ```
 $ yarn
 ```
 
-### Local Development
+## Local Development
 
 ```
 $ yarn start
@@ -16,7 +18,7 @@ $ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Build
 
 ```
 $ yarn build
@@ -24,10 +26,20 @@ $ yarn build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+## Deployment
+
+The main branch is built and deployed with Netlify to https://openpolicyregistry.io.
+
+## Contributions
+
+To contribute a change, open a PR against the main branch. Once merged, it will automatically be deployed.
+
+## Algolia search
+
+`scripts/scrape.sh` contains a script that scrapes the doc site to an Algolia account. 
+
+From the room directory of the project, run:
 
 ```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+$ yarn scrape
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
