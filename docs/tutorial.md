@@ -6,8 +6,12 @@ sidebar_label: Tutorial
 
 ## Login
 
+:::note
+Before you login, you need to [create](/docs/opcr/create-account) an `opcr.io` account using your GitHub credentials.
+:::
+
 ```bash
-$ policy login -u <your opcr.io user> -p <your opcr password>
+$ policy login -u <your GitHub account> -p <GitHub PAT>
 ```
 
 ## CD into a directory with OPA policy source code
