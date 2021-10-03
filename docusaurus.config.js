@@ -47,13 +47,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      /*
       algolia: {
         apiKey: process.env.REACT_APP_ALGOLIA_API_KEY || '_',
         indexName: process.env.REACT_APP_ALGOLIA_INDEX_NAME || '_',
         appId: process.env.REACT_APP_ALGOLIA_APP_ID,
       },
-      */
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
@@ -82,6 +80,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             to: 'https://openpolicyregistry.io',
             label: 'Sign in',
             position: 'right',
+            target: "_self",
           },
         ],
       },
