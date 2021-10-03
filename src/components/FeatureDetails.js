@@ -42,7 +42,6 @@ const FeatureDetailsList = [
 
 function FeatureDetail({Svg, title, description, flip, index}) {
   const id = `feature_${index}`
-  console.log(id)
   return (
     flip ?
       <div id={id} className={`${styles.stripe} row padding-vert--xl`}>
