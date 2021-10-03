@@ -4,13 +4,17 @@ sidebar_label: Exporting images
 
 # Exporting images
 
-Much like exporting images with `docker`, the `policy` CLI allows you to export an image to a tarball:
+Much like exporting images with `docker save`, the `policy` CLI allows you to export an 
+image to a tarball:
 
 ```bash
 policy save <organization-name>/<repository-name>:<tag>
 ```
 
-This command will save the policy to a file called `bundle.tar.gz` in the current directory.
+:::note
+Unlike `docker save` which, by default, outputs to `STDOUT`, `policy save` will save the 
+policy to a file called `bundle.tar.gz` in the current directory.
+:::
 
 ## Example
 

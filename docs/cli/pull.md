@@ -4,7 +4,7 @@ sidebar_label: Pulling images
 
 # Pulling images
 
-Much like pulling images with `docker`, the `policy` CLI allows you to pull an image 
+Similar to pulling images with `docker pull`, the `policy` CLI allows you to pull an image 
 from a policy registry (like `opcr.io`) to your local machine:
 
 ```bash

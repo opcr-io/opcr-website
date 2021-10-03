@@ -4,7 +4,7 @@ sidebar_label: Building images
 
 # Building images
 
-Much like building images with `docker`, the `policy` CLI allows you to build an image 
+Similar to building images with `docker build`, the `policy` CLI allows you to build an image 
 from the contents of a directory and tag that image with a name that consists of an 
 organization name, a repository name, and a tag:
 

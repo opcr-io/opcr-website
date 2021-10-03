@@ -4,7 +4,7 @@ sidebar_label: Pushing images
 
 # Pushing images
 
-Much like pushing images with `docker`, the `policy` CLI allows you to push an image 
+Much like pushing images with `docker push`, the `policy` CLI allows you to push an image 
 from your local filesystem to a policy registry (like `opcr.io`):
 
 ```bash
