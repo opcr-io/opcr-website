@@ -12,6 +12,9 @@ organization name, a repository name, and a tag:
 policy build <directory> -t <organization-name>/<repository-name>:<tag>
 ```
 
+Your current directory should contain an OPA bundle manifest, and rego files that make
+up a policy.
+
 ## Example
 
 ```bash
