@@ -16,9 +16,9 @@ policy push <organization-name>/<repository-name>:<tag>
 ```bash
 $ policy push omrigazitt1/peoplefinder:1.0.0
 
-Resolved ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 
-Pushed ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Pushed ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481
 ```
