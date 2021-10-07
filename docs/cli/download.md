@@ -17,13 +17,13 @@ These are available as tarballs in the [release](https://github.com/opcr-io/poli
 You can install `policy` via homebrew for macOS or LinuxBrew for Linux:
 
 ```shell
-brew tap opcr-io/tap && brew install opcr-io/tap/policy
+brew install opcr-io/tap/policy
 ```
 
 ## Go
 
 You can get `policy` via a GO install
 
-  ```shell
-  go get -u github.com/opcr-io/policy
-  ```
+```shell
+go get -u github.com/opcr-io/policy
+```

@@ -14,3 +14,17 @@ policy login -u <GitHub-account> -p <GitHub-PAT>
 :::note
 This assumes that you've [created](/docs/opcr/create-account) an `opcr.io` account using your GitHub account.
 :::
+
+## options
+
+`-u <GitHub-account>`: specify the GitHub account as the OPCR user
+
+`-p <GitHub-PAT>`: specify the GitHub PAT as the OPCR password
+
+`--password-stdin`: read the password from `stdin`
+
+## Example
+
+```bash
+echo $GITHUB_PAT | policy login -u ogazitt --password-stdin
+```
