@@ -23,7 +23,7 @@ reference: omrigazitt1/peoplefinder:latest
 Check out the new tag:
 
 ```bash
-$ policy list
+$ policy images
 
 |        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
 |--------------------------|--------|-------|---------------|

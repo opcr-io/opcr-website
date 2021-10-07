@@ -32,7 +32,7 @@ $ cd policy-peoplefinder
 ## Build the policy container image
 
 ```bash
-$ policy build . -t <your_organization>/peoplefinder:1.0.0
+$ policy build ./src -t <your_organization>/peoplefinder:1.0.0
 
 
 Created new image.
@@ -42,10 +42,10 @@ Tagging image.
 reference: omrigazitt1/peoplefinder:1.0.0
 ```
 
-## List the policy
+## List the policy images
 
 ```bash
-$ policy list
+$ policy images
 
 |        REPOSITORY        |  TAG  | SIZE  |  CREATED AT  |
 |--------------------------|-------|-------|--------------|
@@ -57,10 +57,10 @@ $ policy list
 ```bash
 $ policy push omrigazitt1/peoplefinder:1.0.0
 
-Resolved ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 
-Pushed ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Pushed ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481
 ```
 
@@ -76,7 +76,7 @@ reference: omrigazitt1/peoplefinder:latest
 Check out the new tag:
 
 ```bash
-$ policy list
+$ policy images
 
 |        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
 |--------------------------|--------|-------|---------------|
@@ -96,7 +96,7 @@ reference: omrigazitt1/peoplefinder:1.0.0
 It's gone!
 
 ```bash
-$ policy list
+$ policy images
 
 |        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
 |--------------------------|--------|-------|---------------|
@@ -111,14 +111,14 @@ $ policy pull omrigazitt1/peoplefinder:1.0.0
 Pulling.
 ref: omrigazitt1/peoplefinder:1.0.0
 
-Pulled ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Pulled ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```
 
 It's back!
 
 ```bash
-$ policy list
+$ policy images
 
 |        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
 |--------------------------|--------|-------|---------------|
@@ -131,7 +131,7 @@ $ policy list
 ```bash
 $ policy save omrigazitt1/peoplefinder
 
-Resolved ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```
 
@@ -152,63 +152,24 @@ $ cosign verify -key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
 ## Run the read-eval-print loop for this policy version
 
 ```bash
-$ policy run omrigazitt1/peoplefinder:1.0.0
+$ policy repl omrigazitt1/peoplefinder:1.0.0
 
 Pulling.
 ref: omrigazitt1/peoplefinder:1.0.0
 
-Pulled ref [eng.openpolicyregistry.io/omrigazitt1/peoplefinder:1.0.0].
+Pulled ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
-
-
-Policy Interactive Shell (you can run 'help' for some pointers)
-
->> input '{ "foo": "bar" }'
-
-Input set.
->> query input
-[
-  {
-    "expressions": [
-      {
-        "value": {
-          "foo": "bar"
-        },
-        "text": "input",
-        "location": {
-          "row": 1,
-          "col": 1
-        }
-      }
-    ]
-  }
-]
->> query "x = data.system.bundles"
-[
-  {
-    "expressions": [
-      {
-        "value": true,
-        "text": "x = data.system.bundles",
-        "location": {
-          "row": 1,
-          "col": 1
-        }
-      }
-    ],
-    "bindings": {
-      "x": {
-        "/Users/ogazitt/.policy/policies-root/blobs/sha256/84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9": {
-          "manifest": {
-            "revision": "",
-            "roots": [
-              "peoplefinder"
-            ]
-          }
-        }
-      }
+running policy [omrigazitt1/peoplefinder:1.0.0]
+> data.system.bundles
+{
+  "/Users/ogazitt/.policy/policies-root/blobs/sha256/84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9": {
+    "manifest": {
+      "revision": "",
+      "roots": [
+        "peoplefinder"
+      ]
     }
   }
-]
->>
+}
+>
 ```

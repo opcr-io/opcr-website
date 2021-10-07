@@ -4,19 +4,27 @@ sidebar_label: Create an account
 
 # Create an account
 
-Go to [opcr.io](https://opcr.io), and create an account with your GitHub account and a valid 
-GitHub Personal Access Token (PAT).
+Click the `Sign in` button in the top right of the navbar, or go to [console.openpolicyregistry.io](https://console.openpolicyregistry.io), and create an `opcr.io` account with your GitHub account.
 
 :::note
-You can use this [link](https://github.com/settings/tokens) to create a new GitHub PAT.
+Since OPCR uses GitHub as its identity provider, your account will be named after your GitHub account.
 :::
 
-## Naming your account
+## Organizations
 
-The first time through, you will be asked to name your account. You can use the same account 
-name that you use for GitHub, or choose a different account name that is unused, and passes 
-the account naming conventions (6 or more characters, no obscene words).
+Much like with GitHub or Docker, an organization name provides the first part of a two-part name 
+for a policy repository. For example, if your organization is named `foo`, you are able to create 
+a repository named `foo/bar`. 
 
-## Personal organization
+## Naming your personal organization
 
-Similar to GitHub accounts, your account name becomes the name of your personal organization.
+The first time through, you will be asked to name your organization. You can use your GitHub account name, or choose a different organization name that is unused, and passes the account naming conventions (4 or more characters, no profanity).
+
+:::warning
+Choose your organization name carefully - you cannot change it later.
+:::
+
+:::note
+Currently, only personal organizations are supported. In the future, you'll be able to create 
+organizations that have multiple members, similar to GitHub and Docker.
+:::

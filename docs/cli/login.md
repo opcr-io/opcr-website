@@ -8,7 +8,7 @@ Just like with `docker login`, the `policy` CLI requires you to login to an OCIv
 registry.  To sign into the `opcr.io` registry:
 
 ```bash
-policy login -u <opcr.io-account> -p <GitHub-PAT>
+policy login -u <GitHub-account> -p <GitHub-PAT>
 ```
 
 :::note

@@ -11,7 +11,6 @@ module.exports = {
       label: 'Open Policy Registry',
       items: [
         'opcr/create-account',
-        'opcr/organizations',
         'opcr/repos-and-images',
       ],
     },
@@ -22,7 +21,7 @@ module.exports = {
         'cli/download',
         'cli/login',
         'cli/build',
-        'cli/list',
+        'cli/images',
         'cli/tag',
         'cli/push',
         'cli/pull',

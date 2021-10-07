@@ -6,17 +6,24 @@ sidebar_label: Download the CLI
 
 `policy` is available on Linux, macOS and Windows platforms.
 
-* Binaries for Linux, Windows and Mac are available as tarballs in the [release](https://github.com/opcr-io/policy/releases) page.
+## Binaries for Linux, Windows and Mac 
 
-* Via Homebrew for macOS or LinuxBrew for Linux
+:::note
+These are available as tarballs in the [release](https://github.com/opcr-io/policy/releases) page.
+:::
 
-   ```shell
-   brew install policy
-   ```
+## Homebrew
 
-* Via a GO install
+You can install `policy` via homebrew for macOS or LinuxBrew for Linux:
+
+```shell
+brew tap opcr-io/tap && brew install opcr-io/tap/policy
+```
+
+## Go
+
+You can get `policy` via a GO install
 
   ```shell
-  # NOTE: The dev version will be in effect!
   go get -u github.com/opcr-io/policy
   ```

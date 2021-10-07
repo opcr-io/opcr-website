@@ -77,7 +77,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
           },
           {
-            to: 'https://openpolicyregistry.io',
+            to: 'https://console.openpolicyregistry.io',
             label: 'Sign in',
             position: 'right',
             target: "_self",
