@@ -32,9 +32,18 @@ const FeatureDetailsList = [
     Svg: require('../../static/img/Section-3.svg').default,
     description: (
       <pre className={styles.featureDetailsCode}>
-        $ policy run myorg/peoplefinder:1.0.0<br/>
-        {`>> input ‘{“foo”: “bar”}’`}<br/>
-        {`>> query input`}<br/>
+        $ policy repl myorg/peoplefinder:1.0.0<br/>
+        {`> data.system.bundles`}<br/>
+        {`{
+  "/Users/ogazitt/.policy/policies-root/blobs/sha256/84d...7e9": {
+    "manifest": {
+      "revision": "",
+      "roots": [
+        "peoplefinder"
+      ]
+    }
+  }
+}`}
       </pre>
     ),
   },
