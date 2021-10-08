@@ -13,7 +13,8 @@ policy save <organization-name>/<repository-name>:<tag>
 
 :::note
 Unlike `docker save` which, by default, outputs to `STDOUT`, `policy save` will save the 
-policy to a file called `bundle.tar.gz` in the current directory.
+policy to a file called `bundle.tar.gz` in the current directory. The path of the tar bundle
+can be changed by passing the `f` flag to the `save` command.
 :::
 
 ## Example
