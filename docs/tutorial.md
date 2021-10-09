@@ -142,12 +142,16 @@ You should now have a `bundle.tar.gz` file in your directory.
 Issue these commands to generate a key pair, sign the policy image, and verify its signature using the public key:
 
 ```bash
-$ docker login -u <your organization> opcr.io
+$ docker login -u <GitHub-account> opcr.io
 $ cosign init
 $ cosign generate-key-pair
 $ cosign sign -key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
 $ cosign verify -key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
 ```
+
+:::note
+For more detailed instructions, see the [signing images](/docs/cli/sign) docs.
+:::
 
 ## Run the read-eval-print loop for this policy version
 

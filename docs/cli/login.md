@@ -4,22 +4,27 @@ sidebar_label: Login
 
 # Login to opcr.io
 
-Just like with `docker login`, the `policy` CLI requires you to login to an OCIv2-compliant 
-registry.  To sign into the `opcr.io` registry:
+:::note
+This assumes that you've [created](/docs/opcr/create-account) an `opcr.io` account using your GitHub account.
+:::
+
+Just like with `docker login`, the `policy` CLI requires you to login to an OCIv2-compliant registry.  To sign into the `opcr.io` registry, use the GitHub account 
+you registered with, and a GitHub personal access token (PAT) as your password.
+
+:::note
+You can create a GitHub PAT on this [page](https://github.com/settings/tokens).
+:::
 
 ```bash
 policy login -u <GitHub-account> -p <GitHub-PAT>
 ```
 
-:::note
-This assumes that you've [created](/docs/opcr/create-account) an `opcr.io` account using your GitHub account.
-:::
 
 ## options
 
 `-u <GitHub-account>`: specify the GitHub account as the OPCR user
 
-`-p <GitHub-PAT>`: specify the GitHub PAT as the OPCR password
+`-p <GitHub-PAT>`: specify a GitHub personal access token (PAT) as the OPCR password
 
 `--password-stdin`: read the password from `stdin`
 

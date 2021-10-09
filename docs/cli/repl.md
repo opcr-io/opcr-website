@@ -7,8 +7,13 @@ sidebar_label: Read-eval-print loop
 The `policy` CLI gives you a read-eval-print loop experience over a tagged policy image. It uses the `opa` evaluator under the covers.
 
 ```bash
-policy run <organization-name>/<repository-name>:<tag>
+policy repl <organization-name>/<repository-name>:<tag>
 ```
+
+:::note
+`policy repl` requires that you push your tagged image to an OCI-compliant registry. 
+If you haven't yet, issue a `policy push` on your policy image.
+:::
 
 ## Example
 

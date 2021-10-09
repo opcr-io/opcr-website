@@ -14,10 +14,10 @@ brew install cosign
 
 ## Example
 
-Since `cosign` uses `docker` under the hood, you have to sign into the opcr.io registry using `docker`:
+Since `cosign` uses `docker` under the hood, you have to sign into the opcr.io registry using `docker`. Use your GitHub personal access token (PAT) as your password.
 
 ```bash
-$ docker login -u <your organization> opcr.io
+$ docker login -u <GitHub-account> opcr.io
 Password:
 Login Succeeded
 ```
@@ -36,6 +36,11 @@ Public key written to cosign.pub
 ```
 
 ### Signing an image
+
+:::note
+You can only sign images that have been pushed to an OCI-compliant registry. 
+If you haven't yet, issue a `policy push` on your policy image before signing it.
+:::
 
 Sign the container image using the private key:
 
