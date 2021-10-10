@@ -10,7 +10,11 @@ Similar to the `docker images` command, the `policy` CLI allows you list local i
 policy images
 ```
 
-You can also list remote images with the `--remote` flag.
+## Options
+
+`-r, --remote`: list images stored in a remote registry
+
+`-e, --show-empty`: show policies with no images
 
 ## Example
 

@@ -20,7 +20,7 @@ policy login -u <GitHub-account> -p <GitHub-PAT>
 ```
 
 
-## options
+## Options
 
 `-u <GitHub-account>`: specify the GitHub account as the OPCR user
 
