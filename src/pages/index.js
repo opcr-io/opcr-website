@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import HomepageVideo from '../components/HomepageVideo';
 import FeatureDetails from '../components/FeatureDetails';
 const Svg = require('../../static/img/Lottie-200.svg').default;
 
@@ -37,6 +38,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <HomepageVideo />
         <FeatureDetails />
       </main>
     </Layout>
