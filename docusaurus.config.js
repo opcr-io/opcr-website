@@ -104,7 +104,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             items: [
               {
                 label: 'Slack',
-                href: 'https://asertocommunity.slack.com/join/shared_invite/zt-p06gin84-xNswWpTGyPDPxCz0LMux3g#/shared-invite/email',
+                href: 'https://join.slack.com/t/asertocommunity/shared_invite/zt-wxv3lezq-4IMPfmOCLjNBPtXA91gEVw',
               },
               {
                 label: 'Twitter',

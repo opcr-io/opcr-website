@@ -40,7 +40,7 @@ We believe that as a "meta-project", OPCR brings together three existing CNCF ec
 
 ## We'd love your feedback
 
-We'd love to hear from you! Tweet / DM us at @openpolicyreg or find us in our [Slack](https://asertocommunity.slack.com/join/shared_invite/zt-p06gin84-xNswWpTGyPDPxCz0LMux3g#/shared-invite/email)!
+We'd love to hear from you! Tweet / DM us at @openpolicyreg or find us in our [Slack](https://join.slack.com/t/asertocommunity/shared_invite/zt-wxv3lezq-4IMPfmOCLjNBPtXA91gEVw)!
 
 ## Happy hacking!
 
