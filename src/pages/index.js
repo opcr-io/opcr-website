@@ -19,7 +19,12 @@ function HomepageHeader() {
         <Svg className={styles.heroSvg} alt={siteConfig.title} />
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg margin-horiz--md"
+            to="/docs/opcr/create-account">
+            Register account
+          </Link>
+          <Link
+            className="button button--secondary button--lg margin-horiz--md"
             to="/docs/cli/download">
             Download the CLI
           </Link>

@@ -4,7 +4,10 @@ sidebar_label: Create an account
 
 # Create an account
 
-Click the `Sign in` button in the top right of the navbar, or go to [console.openpolicyregistry.io](https://console.openpolicyregistry.io), and create an `opcr.io` account with your GitHub account.
+Click the `Sign in` button in the top right of the navbar, or go to [console.openpolicyregistry.io](https://console.openpolicyregistry.io), and create an `opcr.io` account with your GitHub account. This will trigger 
+GitHub's OAuth2 flow.
+
+![github-oauth2](/img/github-oauth.png)
 
 :::note
 Since OPCR uses GitHub as its identity provider, your account will be named after your GitHub account.
@@ -23,6 +26,8 @@ The first time through, you will be asked to name your organization. You can use
 :::warning
 Choose your organization name carefully - you cannot change it later.
 :::
+
+![register organization](/img/register-org.png)
 
 :::note
 Currently, only personal organizations are supported. In the future, you'll be able to create 
