@@ -58,7 +58,7 @@ function FeatureDetail({Svg, title, description, flip, index}) {
         <div className={clsx('col col--9', styles.featureDetailsText)}>
           <div className='padding-horiz--md'>
             <h3>{title}</h3>
-            <p>{description}</p>
+            <div>{description}</div>
           </div>
         </div>
         <div className={clsx('col col--3')}>
@@ -76,7 +76,7 @@ function FeatureDetail({Svg, title, description, flip, index}) {
         <div className={clsx('col col--9', styles.featureDetailsText)}>
           <div className='padding-horiz--md'>
             <h3>{title}</h3>
-            <p>{description}</p>
+            <div>{description}</div>
           </div>
         </div> 
       </div>

@@ -142,5 +142,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         darkTheme: darkCodeTheme,
         additionalLanguages: ['rego'],
       },
+      googleAnalytics: {
+        trackingID: process.env.REACT_APP_GA_TRACKING_ID || '',
+        // Optional fields.
+        anonymizeIP: true, // Should IPs be anonymized?
+      },  
     }),
 });
