@@ -46,7 +46,7 @@ const NewsletterSignUp = (
                     Sign up for the newsletter
                 </h3>
                 <p>
-                    Stay up to date with news about Open Policy Registry.
+                    Stay up to date with news about OPCR.
                 </p>
             </div>
             <div className={styles.signUpFlexDiv}>
