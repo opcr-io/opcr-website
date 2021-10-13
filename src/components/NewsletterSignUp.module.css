@@ -1,0 +1,57 @@
+.svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 20px;
+}
+
+.animateSpin {
+    animation: spin 1s linear infinite;
+
+    @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+}
+
+.signUp {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 132px;
+    border-radius: 4px;
+    background-color: #215e60;
+    color: #e7e7e7;
+}
+
+.signUpHeading {
+    margin: 1rem 0 0.5rem;
+}
+
+.signUpFlexDiv {
+    flex: 1;
+}
+
+.mailchimpForm {
+    margin-top: 20px;
+}
+
+.emailInput {
+    width: 70%;
+    height: 46px;
+    padding: 0px 10px;
+    border: 1px solid #67cbcf;
+    border-radius: 6px;
+    background-color: #121212;
+    font-size: 16px;
+    color: #e7e7e7;
+}
+
+.emailInput:focus {
+    outline: none;
+}
