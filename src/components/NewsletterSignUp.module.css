@@ -1,29 +1,9 @@
-.svg {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin: 0 20px;
-}
-
-.animateSpin {
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .signUp {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
     margin-bottom: 10rem;
     width: 100%;
-    height: 132px;
     border-radius: 4px;
     background-color: #215e60;
     color: #e7e7e7;
@@ -41,8 +21,13 @@
     margin-top: 20px;
 }
 
+.submitEmail {
+    display: flex;
+}
+
 .emailInput {
-    width: 70%;
+    flex: 3;
+    width: 100%;
     height: 46px;
     padding: 0px 10px;
     border: 1px solid #67cbcf;
@@ -55,3 +40,37 @@
 .emailInput:focus {
     outline: none;
 }
+
+.svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 20px;
+}
+
+.animateSpin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    Link, .emailInput, .signUpFlexDiv {
+        flex: none;
+    }
+    .submitEmail {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .signUp {
+        flex-direction: column;
+        text-align: center;
+    }
+  }

@@ -64,7 +64,7 @@ const NewsletterSignUp = (
                         })}
                         className={styles.mailchimpForm}
                     >
-                    <div className="">
+                    <div className={styles.submitEmail}>
                         <input
                             // placeholder="Enter your email..."
                             id="email"
@@ -79,7 +79,7 @@ const NewsletterSignUp = (
                             })}
                             className={clsx(styles.emailInput, "margin--sm")}
                         />
-                        <Link>
+                        <Link className={styles.signUpFlexDiv}>
                             {clearErr === '' ? (
                             <button className="button button--secondary button--lg margin--sm">Let’s go!</button>
                             ) : status ? (
