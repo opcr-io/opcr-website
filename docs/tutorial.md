@@ -4,10 +4,10 @@ sidebar_label: Tutorial
 
 # Tutorial
 
-## Login
+## Sign in
 
 :::note
-Before you login, you need to [create](/docs/opcr/create-account) an `opcr.io` account using your GitHub credentials.
+Before you sign in, you need to [create](/docs/opcr/create-account) an `opcr.io` account using your GitHub credentials.
 :::
 
 ```bash

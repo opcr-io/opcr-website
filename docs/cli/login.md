@@ -1,14 +1,14 @@
 ---
-sidebar_label: Login
+sidebar_label: Sign in
 ---
 
-# Login to opcr.io
+# Sign in to opcr.io
 
 :::note
 This assumes that you've [created](/docs/opcr/create-account) an `opcr.io` account using your GitHub account.
 :::
 
-Just like with `docker login`, the `policy` CLI requires you to login to an OCIv2-compliant registry.  To sign into the `opcr.io` registry, use the GitHub account 
+Just like with `docker login`, the `policy` CLI requires you to sign in to an OCIv2-compliant registry.  To sign in to the `opcr.io` registry, use the GitHub account 
 you registered with, and a GitHub personal access token (PAT) as your password.
 
 :::note
