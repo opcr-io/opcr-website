@@ -14,7 +14,7 @@ brew install cosign
 
 ## Example
 
-Since `cosign` uses `docker` under the hood, you have to sign into the opcr.io registry using `docker`. Use your GitHub personal access token (PAT) as your password.
+Since `cosign` uses `docker` under the hood, you have to sign in to the opcr.io registry using `docker`. Use your GitHub personal access token (PAT) as your password.
 
 ```bash
 $ docker login -u <GitHub-account> opcr.io
