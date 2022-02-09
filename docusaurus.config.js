@@ -49,7 +49,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
-        }
+        },
+        googleAnalytics: {
+          trackingID: process.env.REACT_APP_GA_TRACKING_ID || '_',
+          // Optional fields.
+          anonymizeIP: true, // Should IPs be anonymized?
+        },    
       }),
     ],
   ],
@@ -152,10 +157,5 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         darkTheme: darkCodeTheme,
         additionalLanguages: ['rego'],
       },
-      googleAnalytics: {
-        trackingID: process.env.REACT_APP_GA_TRACKING_ID || '',
-        // Optional fields.
-        anonymizeIP: true, // Should IPs be anonymized?
-      },  
     }),
 });
