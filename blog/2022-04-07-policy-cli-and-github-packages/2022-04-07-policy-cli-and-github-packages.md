@@ -7,9 +7,9 @@ tags: [policy, github]
 
 Today, we are happy to announce that the Policy CLI can interact directly with Github Packages (GHCR)!
 
-GitHub Packages is a platform that allows you to host and maintain packages and containers.  The Policy CLI is a tool built by Aserto that can be used for building, versioning, and publishing your authorization policies. It uses OCI standards to manage artifacts, and the [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa) to compile and run (For more instructions for downloading and using the Policy CLI head to our [documentation](https://www.openpolicyregistry.io/docs/cli/download/)).
+GitHub Packages is a platform that allows you to host and maintain packages and containers.  The Policy CLI is a tool that can be used for building, versioning, and publishing your authorization policies. It uses OCI standards to manage artifacts, and the [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa) to compile and run (For more instructions for downloading and using the Policy CLI head to our [documentation](https://www.openpolicyregistry.io/docs/cli/download/)).
 
-You can now use the Policy CLI to manage your policy images with GHCR as well as the Open Container Registry and the Aserto Container Registry. In this post, we’ll walk through using the Policy CLI with GHCR.
+You can now use the Policy CLI to manage your policy images with GHCR as well as the Open Container Registry. In this post, we’ll walk through using the Policy CLI with GHCR.
 
 ## Login
 To log in to the Policy CLI using your Github Packages credentials, use the following command:
