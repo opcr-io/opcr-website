@@ -27,7 +27,7 @@ Login Succeeded
 Initialize `cosign` and create a key pair:
 
 ```bash
-$ cosign init
+$ cosign initialize
 $ cosign generate-key-pair
 cosign generate-key-pair
 Enter password for private key: Enter again:
