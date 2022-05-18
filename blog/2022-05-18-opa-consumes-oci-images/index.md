@@ -20,7 +20,8 @@ Read on for more details!
 The [policy CLI](https://www.openpolicyregistry.io/docs/cli/download) tool can be easily used to build and push a policy to a remote OCI registry using just two simple commands:
 - `policy build <path_to_src> -t <org>/<repo>:<tag>`
 - `policy push <registry>/<org>/<repo>:<tag>`
-A full tutorial is available [here](https://www.openpolicyregistry.io/docs/tutorial)
+
+A full tutorial is available [here](https://www.openpolicyregistry.io/docs/tutorial).
 
 ## Step 2: Prepare your OPA configuration
 The [services configuration documentation for OPA](https://www.openpolicyagent.org/docs/latest/configuration/#services) now includes a parameter defined as type to allow users to configure OCI compatible service registries. 
