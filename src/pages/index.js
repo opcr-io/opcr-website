@@ -22,12 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg margin-horiz--md"
             to="/docs/opcr/create-account">
-            Register account
-          </Link>
-          <Link
-            className="button button--secondary button--lg margin-horiz--md"
-            to="/docs/cli/download">
-            Download the CLI
+            Create account
           </Link>
         </div>
       </div>
