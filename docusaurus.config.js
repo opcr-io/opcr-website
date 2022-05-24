@@ -86,6 +86,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs/cli/download', label: 'Get the CLI', position: 'left'},
           {
             href: 'https://github.com/opcr-io/policy',
             label: 'GitHub',
