@@ -9,9 +9,10 @@ import HomepageVideo from '../components/HomepageVideo';
 import FeatureDetails from '../components/FeatureDetails';
 import NewsletterSignUp from '../components/NewsletterSignUp';
 const Svg = require('../../static/img/Lottie-200.svg').default;
+import FlexBanner from "flex-banner";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -31,18 +32,30 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Welcome to ${siteConfig.title}`}
-      description="A registry and toolchain for OPA policies">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-        <HomepageVideo />
-        <FeatureDetails />
-        <NewsletterSignUp />
-      </main>
-    </Layout>
+    <>
+      <FlexBanner
+        title="⭐️ Star on GitHub to follow ⭐️"
+        ctaLink="https://github.com/opcr-io/policy"
+        animationTime={0}
+        delayToShowBanner={0}
+        isCenter={true}
+        crossIconSize={20}
+        wrapperStyle={{ backgroundColor: '#21AF90' }}
+        mainStyleTitle={{ textDecoration: "none", fontSize: "1.2rem" }}
+      />
+      <Layout
+        title={`Welcome to ${siteConfig.title}`}
+        description="A registry and toolchain for OPA policies">
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <HomepageVideo />
+          <FeatureDetails />
+          <NewsletterSignUp />
+        </main>
+      </Layout>
+    </>
   );
 }
