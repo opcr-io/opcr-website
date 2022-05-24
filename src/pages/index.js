@@ -42,7 +42,7 @@ export default function Home() {
         delayToShowBanner={0}
         isCenter={true}
         crossIconSize={20}
-        wrapperStyle={{ backgroundColor: '#21AF90' }}
+        wrapperStyle={{ backgroundColor: '#215E60' }}
         mainStyleTitle={{ textDecoration: "none", fontSize: "1.2rem" }}
       />
       <Layout
