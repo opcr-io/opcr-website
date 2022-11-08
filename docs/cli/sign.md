@@ -45,7 +45,7 @@ If you haven't yet, issue a `policy push` on your policy image before signing it
 Sign the container image using the private key:
 
 ```bash
-$ cosign sign -key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign sign --key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
 Enter password for private key: Pushing signature to: opcr.io/omrigazitt1/peoplefinder:sha256-05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481.sig
 ```
 
@@ -54,7 +54,7 @@ Enter password for private key: Pushing signature to: opcr.io/omrigazitt1/people
 Verify the signature using the public key:
 
 ```bash
-$ cosign verify -key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign verify --key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
 
 Verification for opcr.io/omrigazitt1/peoplefinder:1.0.0 --
 The following checks were performed on each of these signatures:

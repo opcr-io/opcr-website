@@ -143,10 +143,10 @@ Issue these commands to generate a key pair, sign the policy image, and verify i
 
 ```bash
 $ docker login -u <GitHub-account> opcr.io
-$ cosign init
+$ cosign initialize
 $ cosign generate-key-pair
-$ cosign sign -key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
-$ cosign verify -key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign sign --key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign verify --key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
 ```
 
 :::note

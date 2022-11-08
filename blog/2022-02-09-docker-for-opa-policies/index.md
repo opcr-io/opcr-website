@@ -68,7 +68,7 @@ Pushed ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].digest: sha256:05e6ed84d86f6
 ### Signing images
 
 ```
-$ cosign sign -key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign sign --key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
 Enter password for private key: Pushing signature to: opcr.io/omrigazitt1/peoplefinder:sha256-05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481.sig
 ```
 

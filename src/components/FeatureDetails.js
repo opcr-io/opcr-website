@@ -21,10 +21,10 @@ $ policy pull myorg/peoplefinder
     Svg: require('../../static/img/Section-2.svg').default,
     description: (
       <pre className={styles.featureDetailsCode}>
-        {`$ cosign init
+        {`$ cosign initialize
 $ cosign generate-key-pair
-$ cosign sign -key cosign.key myorg/peoplefinder:1.0.0
-$ cosign verify -key cosign.pub myorg/peoplefinder:1.0.0`}
+$ cosign sign --key cosign.key myorg/peoplefinder:1.0.0
+$ cosign verify --key cosign.pub myorg/peoplefinder:1.0.0`}
       </pre>
     ),
   },
