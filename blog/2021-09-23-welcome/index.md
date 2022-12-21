@@ -1,6 +1,6 @@
 ---
 slug: welcome
-title: Welcome to the Open Policy Registry project!
+title: Welcome to the Open Policy Containers project!
 authors: [vlad, gert, omri]
 tags: [opr, hello, opcr]
 ---
@@ -25,7 +25,11 @@ CLI, you can *build*, *tag*, *push*, and *pull* policy images just like you do w
 ## opcr.io
 
 By representing policy images as OCIv2 containers, you can push and pull them into any OCIv2-compatible 
-registry. But we thought it would be useful to have a container registry that would focus 
+registry. 
+
+And indeed, you can use any OCI-compliant container registry with the `policy` CLI - GitHub Container Registry, Google Container Registry, Docker Hub, AWS ECR, etc.
+
+In addition we thought it would be useful to have a container registry that would focus 
 exclusively on policies as a container image type. 
 
 We built `opcr.io` as a container registry for round-tripping policy image containers.

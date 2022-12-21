@@ -21,13 +21,13 @@ policy images
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG  | SIZE  |  CREATED AT  |
-|--------------------------|-------|-------|--------------|
-| omrigazitt1/peoplefinder | 1.0.0 | 555 B | 1 minute ago |
+|          REPOSITORY          |  TAG  | SIZE  |  CREATED AT  |
+|------------------------------|-------|-------|--------------|
+| ghcr.io/ogazitt/peoplefinder | 1.0.0 | 555 B | 1 minute ago |
 
 $ policy images --remote
 
-|        REPOSITORY        |  TAG  | 
-|--------------------------|-------|
-| omrigazitt1/peoplefinder | 1.0.0 | 
+|          REPOSITORY          |  TAG  | 
+|------------------------------|-------|
+| ghcr.io/ogazitt/peoplefinder | 1.0.0 | 
 ```

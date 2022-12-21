@@ -1,6 +1,6 @@
 # OPCR Website
 
-This is the source repo for the Open Policy Registry (OPCR) [landing page](https://openpolicyregistry.io) and documentation site.
+This is the source repo for the Open Policy Containers (OPCR) [landing page](https://opcr.io) and documentation site.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 

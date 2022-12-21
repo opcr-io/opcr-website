@@ -14,11 +14,10 @@ brew install cosign
 
 ## Example
 
-Since `cosign` uses `docker` under the hood, you have to sign in to the opcr.io registry using `docker`. Use your GitHub personal access token (PAT) as your password.
+Since `cosign` uses `docker` under the hood, you have to sign in to your registry using `docker`. For example, to use `ghcr.io`, use your GitHub personal access token (PAT) as your password.
 
 ```bash
-$ docker login -u <GitHub-account> opcr.io
-Password:
+$ echo $PAT | docker login -u <GitHub-account> ghcr.io --password-stdin
 Login Succeeded
 ```
 
@@ -45,8 +44,8 @@ If you haven't yet, issue a `policy push` on your policy image before signing it
 Sign the container image using the private key:
 
 ```bash
-$ cosign sign --key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
-Enter password for private key: Pushing signature to: opcr.io/omrigazitt1/peoplefinder:sha256-05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481.sig
+$ cosign sign --key cosign.key ghcr.io/ogazitt/peoplefinder:1.0.0
+Enter password for private key: Pushing signature to: ghcr.io/ogazitt/peoplefinder:sha256-05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481.sig
 ```
 
 ### Verifying the signature
@@ -54,13 +53,13 @@ Enter password for private key: Pushing signature to: opcr.io/omrigazitt1/people
 Verify the signature using the public key:
 
 ```bash
-$ cosign verify --key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign verify --key cosign.pub ghcr.io/ogazitt/peoplefinder:1.0.0
 
-Verification for opcr.io/omrigazitt1/peoplefinder:1.0.0 --
+Verification for ghcr.io/ogazitt/peoplefinder:1.0.0 --
 The following checks were performed on each of these signatures:
   - The cosign claims were validated
   - The signatures were verified against the specified public key
   - Any certificates were verified against the Fulcio roots.
 
-[{"critical":{"identity":{"docker-reference":"opcr.io/omrigazitt1/peoplefinder"},"image":{"docker-manifest-digest":"sha256:05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481"},"type":"cosign container image signature"},"optional":null}]
+[{"critical":{"identity":{"docker-reference":"ghcr.io/ogazitt/peoplefinder"},"image":{"docker-manifest-digest":"sha256:05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481"},"type":"cosign container image signature"},"optional":null}]
 ```

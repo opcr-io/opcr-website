@@ -8,16 +8,16 @@ Just like tagging images with `docker tag`, the `policy` CLI allows you to tag a
 with a new tag:
 
 ```bash
-policy tag <image-name> <organization-name>/<repository-name>:<tag>
+policy tag <image-name> <registry>/<organization-name>/<repository-name>:<tag>
 ```
 
 ## Example
 
 ```bash
-$ policy tag omrigazitt1/peoplefinder:1.0.0 omrigazitt1/peoplefinder:latest
+$ policy tag ghcr.io/ogazitt/peoplefinder:1.0.0 ghcr.io/ogazitt/peoplefinder:latest
 
 Tagging image.
-reference: omrigazitt1/peoplefinder:latest
+reference: ghcr.io/ogazitt/peoplefinder:latest
 ```
 
 Check out the new tag:
@@ -25,8 +25,8 @@ Check out the new tag:
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
-|--------------------------|--------|-------|---------------|
-| omrigazitt1/peoplefinder | 1.0.0  | 555 B | 5 minutes ago |
-| omrigazitt1/peoplefinder | latest | 555 B | 5 minutes ago |
+|          REPOSITORY          |  TAG   | SIZE  |  CREATED AT   |
+|------------------------------|--------|-------|---------------|
+| ghcr.io/ogazitt/peoplefinder | 1.0.0  | 555 B | 5 minutes ago |
+| ghcr.io/ogazitt/peoplefinder | latest | 555 B | 5 minutes ago |
 ```
