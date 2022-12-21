@@ -7,7 +7,7 @@ sidebar_label: Removing images
 To remove a tagged image:
 
 ```bash
-policy rm <organization-name>/<repository-name>:<tag>
+policy rm <registry>/<organization-name>/<repository-name>:<tag>
 ```
 
 ## Options
@@ -21,9 +21,9 @@ policy rm <organization-name>/<repository-name>:<tag>
 ## Example
 
 ```bash
-$ policy rm omrigazitt1/peoplefinder:1.0.0
+$ policy rm ghcr.io/ogazitt/peoplefinder:1.0.0
 
 Removed reference.
-reference: omrigazitt1/peoplefinder:1.0.0
+reference: ghcr.io/ogazitt/peoplefinder:1.0.0
 ```
 

@@ -6,12 +6,14 @@ sidebar_label: Tutorial
 
 ## Sign in
 
+Sign in to your container registry. This example is written for `ghcr.io`. 
+
 :::note
-Before you sign in, you need to [create](/docs/opcr/create-account) an `opcr.io` account using your GitHub credentials.
+More detailed instructions on other registries can be found [here](/docs/cli/login).
 :::
 
 ```bash
-$ policy login -u <your GitHub account> -p <GitHub PAT>
+$ echo $PAT| policy login -s ghcr.io -u <github-account> --password-stdin
 ```
 
 ## CD into a directory with OPA policy source code
@@ -25,21 +27,21 @@ $ cd <directory that has an OPA project - rego files / data files>
 Or, if you want to play with a sample OPA policy:
 
 ```bash
-$ git clone https://github.com/aserto-dev/policy-peoplefinder
+$ git clone https://github.com/aserto-demo/policy-peoplefinder
 $ cd policy-peoplefinder
 ```
 
 ## Build the policy container image
 
 ```bash
-$ policy build ./src -t <your_organization>/peoplefinder:1.0.0
+$ policy build ./src -t <registry>/<your_organization>/peoplefinder:1.0.0
 
 
 Created new image.
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 
 Tagging image.
-reference: omrigazitt1/peoplefinder:1.0.0
+reference: ghcr.io/ogazitt/peoplefinder:1.0.0
 ```
 
 ## List the policy images
@@ -47,30 +49,30 @@ reference: omrigazitt1/peoplefinder:1.0.0
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG  | SIZE  |  CREATED AT  |
-|--------------------------|-------|-------|--------------|
-| omrigazitt1/peoplefinder | 1.0.0 | 555 B | 1 minute ago |
+|          REPOSITORY          |  TAG  | SIZE  |  CREATED AT  |
+|------------------------------|-------|-------|--------------|
+| ghcr.io/ogazitt/peoplefinder | 1.0.0 | 555 B | 1 minute ago |
 ```
 
-## Push the policy to opcr.io
+## Push the policy to ghcr.io
 
 ```bash
-$ policy push omrigazitt1/peoplefinder:1.0.0
+$ policy push ghcr.io/ogazitt/peoplefinder:1.0.0
 
-Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 
-Pushed ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Pushed ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:05e6ed84d86f6a252e24f33cb12138d9193780f1d89a1b2ff14ced315fdf8481
 ```
 
 ## Tag the policy
 
 ```bash
-$ policy tag omrigazitt1/peoplefinder:1.0.0 omrigazitt1/peoplefinder:latest
+$ policy tag ghcr.io/ogazitt/peoplefinder:1.0.0 ghcr.io/ogazitt/peoplefinder:latest
 
 Tagging image.
-reference: omrigazitt1/peoplefinder:latest
+reference: ghcr.io/ogazitt/peoplefinder:latest
 ```
 
 Check out the new tag:
@@ -78,19 +80,19 @@ Check out the new tag:
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
-|--------------------------|--------|-------|---------------|
-| omrigazitt1/peoplefinder | 1.0.0  | 555 B | 5 minutes ago |
-| omrigazitt1/peoplefinder | latest | 555 B | 5 minutes ago |
+|          REPOSITORY          |  TAG   | SIZE  |  CREATED AT   |
+|------------------------------|--------|-------|---------------|
+| ghcr.io/ogazitt/peoplefinder | 1.0.0  | 555 B | 5 minutes ago |
+| ghcr.io/ogazitt/peoplefinder | latest | 555 B | 5 minutes ago |
 ```
 
 ## Remove a policy from the local cache
 
 ```bash
-$ policy rm omrigazitt1/peoplefinder:1.0.0
+$ policy rm ghcr.io/ogazitt/peoplefinder:1.0.0
 
 Removed reference.
-reference: omrigazitt1/peoplefinder:1.0.0
+reference: ghcr.io/ogazitt/peoplefinder:1.0.0
 ```
 
 It's gone!
@@ -98,20 +100,20 @@ It's gone!
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
-|--------------------------|--------|-------|---------------|
-| omrigazitt1/peoplefinder | latest | 555 B | 6 minutes ago |
+|          REPOSITORY          |  TAG   | SIZE  |  CREATED AT   |
+|------------------------------|--------|-------|---------------|
+| ghcr.io/ogazitt/peoplefinder | latest | 555 B | 6 minutes ago |
 ```
 
 ## Pull the image back from the registry
 
 ```bash
-$ policy pull omrigazitt1/peoplefinder:1.0.0
+$ policy pull ghcr.io/ogazitt/peoplefinder:1.0.0
 
 Pulling.
-ref: omrigazitt1/peoplefinder:1.0.0
+ref: ghcr.io/ogazitt/peoplefinder:1.0.0
 
-Pulled ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Pulled ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```
 
@@ -120,18 +122,18 @@ It's back!
 ```bash
 $ policy images
 
-|        REPOSITORY        |  TAG   | SIZE  |  CREATED AT   |
-|--------------------------|--------|-------|---------------|
-| omrigazitt1/peoplefinder | latest | 555 B | 7 minutes ago |
-| omrigazitt1/peoplefinder | 1.0.0  | 555 B | 7 minutes ago |
+|          REPOSITORY          |  TAG   | SIZE  |  CREATED AT   |
+|------------------------------|--------|-------|---------------|
+| ghcr.io/ogazitt/peoplefinder | latest | 555 B | 7 minutes ago |
+| ghcr.io/ogazitt/peoplefinder | 1.0.0  | 555 B | 7 minutes ago |
 ```
 
 ## Export a policy to a tarball
 
 ```bash
-$ policy save omrigazitt1/peoplefinder
+$ policy save ghcr.io/ogazitt/peoplefinder
 
-Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```
 
@@ -142,11 +144,11 @@ You should now have a `bundle.tar.gz` file in your directory.
 Issue these commands to generate a key pair, sign the policy image, and verify its signature using the public key:
 
 ```bash
-$ docker login -u <GitHub-account> opcr.io
+$ docker login -u <GitHub-account> ghcr.io
 $ cosign initialize
 $ cosign generate-key-pair
-$ cosign sign --key cosign.key opcr.io/omrigazitt1/peoplefinder:1.0.0
-$ cosign verify --key cosign.pub opcr.io/omrigazitt1/peoplefinder:1.0.0
+$ cosign sign --key cosign.key ghcr.io/ogazitt/peoplefinder:1.0.0
+$ cosign verify --key cosign.pub ghcr.io/ogazitt/peoplefinder:1.0.0
 ```
 
 :::note
@@ -156,14 +158,14 @@ For more detailed instructions, see the [signing images](/docs/cli/sign) docs.
 ## Run the read-eval-print loop for this policy version
 
 ```bash
-$ policy repl omrigazitt1/peoplefinder:1.0.0
+$ policy repl ghcr.io/ogazitt/peoplefinder:1.0.0
 
 Pulling.
-ref: omrigazitt1/peoplefinder:1.0.0
+ref: ghcr.io/ogazitt/peoplefinder:1.0.0
 
-Pulled ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Pulled ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
-running policy [omrigazitt1/peoplefinder:1.0.0]
+running policy [ghcr.io/ogazitt/peoplefinder:1.0.0]
 > data.system.bundles
 {
   "/Users/ogazitt/.policy/policies-root/blobs/sha256/84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9": {

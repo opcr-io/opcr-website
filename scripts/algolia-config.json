@@ -1,6 +1,6 @@
 {
   "index_name": "opcr-website",
-  "start_urls": ["https://www.openpolicyregistry.io"],
+  "start_urls": ["https://www.opcr.io"],
   "selectors": {
     "lvl0": {
       "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text())[last()]",

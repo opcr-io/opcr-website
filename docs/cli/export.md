@@ -8,7 +8,7 @@ Much like exporting images with `docker save`, the `policy` CLI allows you to ex
 image to a tarball:
 
 ```bash
-policy save <organization-name>/<repository-name>:<tag>
+policy save <registry>/<organization-name>/<repository-name>:<tag>
 ```
 
 :::note
@@ -20,8 +20,8 @@ can be changed by passing the `f` flag to the `save` command.
 ## Example
 
 ```bash
-$ policy save omrigazitt1/peoplefinder
+$ policy save ghcr.io/ogazitt/peoplefinder
 
-Resolved ref [opcr.io/omrigazitt1/peoplefinder:1.0.0].
+Resolved ref [ghcr.io/ogazitt/peoplefinder:1.0.0].
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 ```

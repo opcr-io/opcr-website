@@ -22,8 +22,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg margin-horiz--md"
-            to="/docs/opcr/create-account">
-            Create account
+            to="/docs/cli/download">
+            Get the CLI
           </Link>
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Home() {
       />
       <Layout
         title={`Welcome to ${siteConfig.title}`}
-        description="A registry and toolchain for OPA policies">
+        description="A docker workflow for OPA policies">
         <HomepageHeader />
         <main>
           <HomepageFeatures />

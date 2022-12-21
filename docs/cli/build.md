@@ -9,7 +9,7 @@ from the contents of a directory and tag that image with a name that consists of
 organization name, a repository name, and a tag:
 
 ```bash
-policy build <directory> -t <organization-name>/<repository-name>:<tag>
+policy build <directory> -t <registry>/<organization-name>/<repository-name>:<tag>
 ```
 
 Your current directory should contain an OPA bundle manifest, and rego files that make
@@ -18,12 +18,12 @@ up a policy.
 ## Example
 
 ```bash
-$ policy build . -t omrigazitt1/peoplefinder:1.0.0
+$ policy build . -t ghcr.io/ogazitt/peoplefinder:1.0.0
 
 
 Created new image.
 digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 
 Tagging image.
-reference: omrigazitt1/peoplefinder:1.0.0
+reference: ghcr.io/ogazitt/peoplefinder:1.0.0
 ```

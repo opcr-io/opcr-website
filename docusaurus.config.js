@@ -4,9 +4,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'Open Policy Registry',
+  title: 'Open Policy Containers',
   tagline: 'A Docker-inspired workflow for OPA policies',
-  url: 'https://openpolicyregistry.io',
+  url: 'https://opcr.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -86,7 +86,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/docs/cli/download', label: 'Get the CLI', position: 'left'},
           {
             href: 'https://github.com/opcr-io/policy',
             label: 'GitHub',
