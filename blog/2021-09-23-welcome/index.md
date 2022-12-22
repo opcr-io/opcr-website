@@ -2,7 +2,7 @@
 slug: welcome
 title: Welcome to the Open Policy Containers project!
 authors: [vlad, gert, omri]
-tags: [opr, hello, opcr]
+tags: [hello, opcr]
 ---
 
 ## A brief history

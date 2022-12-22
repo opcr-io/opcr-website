@@ -2,7 +2,7 @@
 slug: docker-workflow-for-opa
 title: Policy CLI - “docker” for your OPA policies
 authors: [roie]
-tags: [opr, policy, opcr]
+tags: [policy, opcr]
 ---
 
 The _Open Policy Agent _([OPA](https://www.openpolicyagent.org/)) is a general-purpose decision engine used in a wide variety of contexts where policies govern authorization and access-control. One of the most important value propositions of OPA is that it decouples decision logic (defined in the policy) from decision enforcement (which happens in the application or service). This decoupling allows the policy to be developed and managed separately from the application or service. Decision-making execution is delegated to the OPA engine, guaranteeing that the policies are consistently interpreted and enforced. 
@@ -35,11 +35,9 @@ Using the OCI standards allows us to leverage a well-established workflow - the 
 
 The process follows the familiar build -> tag -> push -> pull pattern. When needed, we can use `cosign` to sign the policy image. 
 
-The policy CLI works with the [Open Container Registry](https://opcr.io) (OPCR) which is similar to Docker Hub: it lets developers freely host policy images, search through these shared policies and download them as they would with other container registries. 
-
 ## The `policy` CLI
 
-Using the `policy` CLI is very similar to using the Docker CLI. Here are some examples:
+The policy CLI works with any artifact registry that supports OCI containers as a media type. Using the `policy` CLI is very similar to using the Docker CLI. Here are some examples:
 
 ### Building images
 
@@ -103,7 +101,7 @@ $ policy images --remote
 
 ## Summary
 
-We created OPCR because we believe OPA policies should be easy to share, and we think that OCIv2 is the best standard for that purpose. Leveraging OCIv2 allows us to use other tools in the ecosystem, which improves the overall development workflow as well as the distribution process.
+We created Open Policy Containers because we believe OPA policies should be easy to share, and we think that OCIv2 is the best standard for that purpose. Leveraging OCIv2 allows us to use other tools in the ecosystem, which improves the overall development workflow as well as the distribution process.
 
 We hope you find this tool useful!
 

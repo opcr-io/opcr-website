@@ -26,18 +26,18 @@ A full tutorial is available [here](/docs/tutorial).
 ## Step 2: Prepare your OPA configuration
 The [services configuration documentation for OPA](https://www.openpolicyagent.org/docs/latest/configuration/#services) now includes a parameter defined as type to allow users to configure OCI compatible service registries. 
  
-Example of using a public policy image configuration with the bundle plugin from [OPCR.io](https://www.opcr.io/):
+Example of using a public policy image configuration with the bundle plugin from [Open Policy Registry](https://openpolicyregistry.io/):
 ```
 config.yaml
 ---
 services:
-  opcr-registry:
+  open-policy-registry:
     url: https://opcr.io
     type: oci
 
 bundles:
   authz:
-    service: opcr-registry
+    service: open-policy-registry
     resource: opcr.io/aserto-templates/peoplefinder-rbac:1.0.0
     persist: true
     polling:
