@@ -89,13 +89,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           {
             href: 'https://github.com/opcr-io/policy',
             label: 'GitHub',
-            position: 'left',
-          },
-          {
-            to: 'https://console.openpolicyregistry.io',
-            label: 'Sign in',
             position: 'right',
-            target: "_self",
           },
         ],
       },

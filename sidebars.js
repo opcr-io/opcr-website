@@ -8,7 +8,7 @@ module.exports = {
     'tutorial',
     {
       type: 'category',
-      label: 'Using the CLI',
+      label: 'CLI Reference',
       items: [
         'cli/download',
         'cli/login',
@@ -23,13 +23,5 @@ module.exports = {
         'cli/sign',
       ],
     }, 
-    {
-      type: 'category',
-      label: 'Open Policy Registry',
-      items: [
-        'opcr/create-account',
-        'opcr/repos-and-images',
-      ],
-    },
   ],
 }

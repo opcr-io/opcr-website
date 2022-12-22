@@ -22,7 +22,7 @@ we interact with docker images.
 We modeled the `policy` CLI on `docker` - a familiar pattern to most developers. With the `policy` 
 CLI, you can *build*, *tag*, *push*, and *pull* policy images just like you do with `docker`.
 
-## opcr.io
+## Open Policy Registry
 
 By representing policy images as OCIv2 containers, you can push and pull them into any OCIv2-compatible 
 registry. 
@@ -32,7 +32,7 @@ And indeed, you can use any OCI-compliant container registry with the `policy` C
 In addition we thought it would be useful to have a container registry that would focus 
 exclusively on policies as a container image type. 
 
-We built `opcr.io` as a container registry for round-tripping policy image containers.
+We built [Open Policy Registry](https://openpolicyregistry.io) as a container registry for round-tripping policy image containers.
 
 ## Bringing together three CNCF ecosystems
 
