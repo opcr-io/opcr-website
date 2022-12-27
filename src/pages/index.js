@@ -8,6 +8,7 @@ import HomepageFeatures from '../components/HomepageFeatures';
 import HomepageVideo from '../components/HomepageVideo';
 import FeatureDetails from '../components/FeatureDetails';
 import NewsletterSignUp from '../components/NewsletterSignUp';
+import CNCF from '../components/CNCF';
 const Svg = require('../../static/img/Lottie-200.svg').default;
 import FlexBanner from "flex-banner";
 
@@ -53,6 +54,7 @@ export default function Home() {
           <HomepageFeatures />
           <HomepageVideo />
           <FeatureDetails />
+          <CNCF />
           <NewsletterSignUp />
         </main>
       </Layout>

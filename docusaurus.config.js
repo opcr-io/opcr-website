@@ -65,7 +65,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       algolia: {
         apiKey: process.env.REACT_APP_ALGOLIA_API_KEY || '_',
         indexName: process.env.REACT_APP_ALGOLIA_INDEX_NAME || '_',
-        appId: process.env.REACT_APP_ALGOLIA_APP_ID,
+        appId: process.env.REACT_APP_ALGOLIA_APP_ID || '_',
+        contextualSearch: false,
       },
       colorMode: {
         defaultMode: 'dark',
@@ -144,17 +145,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'Aserto-logo-color-120px.png',
           href: 'https://aserto.com',
         },    
-        copyright: `Copyright © ${new Date().getFullYear()} - built with ❤️ by Aserto.`
+        copyright: `Copyright © ${new Date().getFullYear()} OPCR contributors - built with ❤️ by Aserto.`
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['rego'],
-      },
-      googleAnalytics: {
-        trackingID: process.env.REACT_APP_GA_TRACKING_ID || '_',
-        // Optional fields.
-        anonymizeIP: true, // Should IPs be anonymized?
       },
     }),
 });
