@@ -6,6 +6,8 @@ module.exports = {
   sidebar: [
     'intro',
     'tutorial',
+    'opa',
+    'topaz',
     {
       type: 'category',
       label: 'CLI Reference',
