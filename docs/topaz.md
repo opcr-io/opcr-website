@@ -27,7 +27,7 @@ opa:
         response_header_timeout_seconds: 5
         credentials:
           bearer:
-            schema: "Basic"
+            scheme: "Basic"
             token: "iDog"
     bundles:
       policy-todo:
@@ -57,7 +57,7 @@ opa:
         response_header_timeout_seconds: 5
         credentials:
           bearer:
-            schema: "Bearer"
+            scheme: "Bearer"
             token: "<PAT>"
     bundles:
       policy-todo:
