@@ -12,7 +12,7 @@ const CNCF = () =>
     <div className="container">
       <center>
         <h2>We are a Cloud Native Computing Foundation sandbox project.</h2>
-        <img width="300px" src="https://www.cncf.io/wp-content/uploads/2022/07/cncf-color-bg.svg" alt="CNCF logo" />
+        <img width="500px" src="https://raw.githubusercontent.com/cncf/artwork/master/other/cncf/horizontal/white/cncf-white.svg" alt="CNCF logo" />
       </center>
     </div>
   </section>

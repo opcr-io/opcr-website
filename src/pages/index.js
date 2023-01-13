@@ -55,7 +55,7 @@ export default function Home() {
           <HomepageVideo />
           <FeatureDetails />
           <CNCF />
-          <NewsletterSignUp />
+          { /* <NewsletterSignUp /> */ }
         </main>
       </Layout>
     </>

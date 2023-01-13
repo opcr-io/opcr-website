@@ -73,7 +73,7 @@ const NewsletterSignUp = (
                                 required: 'Email is required',
                                 maxLength: 50,
                                 pattern: {
-                                value: /^[\w-.]+@([\w-]+\.)+[\w-]{2,6}$/,
+                                value: /^[\w-+.]+@([\w-]+\.)+[\w-]{2,6}$/,
                                 message: 'Email must be valid'
                                 }
                             })}
