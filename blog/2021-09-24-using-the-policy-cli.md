@@ -17,4 +17,4 @@ The full tutorial is [here](/docs/tutorial).
 
 ## Happy hacking!
 
-![opcr](/img/logo.png)
+<img src="/img/opcr.svg" alt="opcr" width="200"/>

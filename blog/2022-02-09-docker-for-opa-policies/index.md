@@ -105,4 +105,4 @@ We created Open Policy Containers because we believe OPA policies should be easy
 
 We hope you find this tool useful!
 
-![opcr](/img/logo.png)
+<img src="/img/opcr.svg" alt="opcr" width="200"/>

@@ -9,7 +9,7 @@ import HomepageVideo from '../components/HomepageVideo';
 import FeatureDetails from '../components/FeatureDetails';
 import NewsletterSignUp from '../components/NewsletterSignUp';
 import CNCF from '../components/CNCF';
-const Svg = require('../../static/img/Lottie-200.svg').default;
+const Svg = require('../../static/img/opcr-logo.svg').default;
 import FlexBanner from "flex-banner";
 
 function HomepageHeader() {
@@ -43,7 +43,7 @@ export default function Home() {
         delayToShowBanner={0}
         isCenter={true}
         crossIconSize={20}
-        wrapperStyle={{ backgroundColor: '#215E60' }}
+        wrapperStyle={{ backgroundColor: '#5970D6' }}
         mainStyleTitle={{ textDecoration: "none", fontSize: "1.2rem" }}
       />
       <Layout

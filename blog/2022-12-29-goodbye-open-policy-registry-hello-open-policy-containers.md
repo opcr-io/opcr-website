@@ -47,4 +47,4 @@ For Aserto users, we will continue to maintain the Aserto Policy Registry (regis
 
 We're excited how far we've come over the last year in getting OPA to natively consume policies packaged as OCI images. If you have any feedback or requests, don't hesitate to open an [issue](https://github.com/opcr-io/policy/issues/new)!
 
-![opcr](/img/logo.png)
+<img src="/img/opcr.svg" alt="opcr" width="200"/>

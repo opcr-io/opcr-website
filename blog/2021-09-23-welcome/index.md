@@ -48,4 +48,4 @@ We'd love to hear from you! Tweet / DM us at @openpolicyreg or find us in our [S
 
 ## Happy hacking!
 
-![opcr](/img/logo.png)
+<img src="/img/opcr.svg" alt="opcr" width="200"/>

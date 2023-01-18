@@ -77,7 +77,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         style: 'dark',
         logo: {
           alt: 'OPCR Logo',
-          src: 'img/logo.png',
+          src: 'img/opcr.svg',
         },
         items: [
           {
