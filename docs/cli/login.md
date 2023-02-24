@@ -70,19 +70,3 @@ Then login using `policy` the same way you would login to `docker`:
 ```bash
 cat KEY-FILE | policy login -s gcr.io -u _json_key --password-stdin 
 ```
-
-## Open Policy Registry
-
-:::note
-This assumes that you've [created](https://openpolicyregistry.io/docs/opcr/create-account) an Open Policy Registry account using your GitHub account.
-:::
-
-To sign in to the Open Policy Registry, use the GitHub account you registered with, and a GitHub personal access token (PAT) as your password.
-
-:::note
-You can create a GitHub PAT on this [page](https://github.com/settings/tokens).
-:::
-
-```bash
-echo $PAT | policy login -s opcr.io -u <GitHub-account> --password-stdin
-```
