@@ -25,14 +25,10 @@ opa:
         url: https://ghcr.io
         type: oci
         response_header_timeout_seconds: 5
-        credentials:
-          bearer:
-            scheme: "Basic"
-            token: "iDog"
     bundles:
       policy-todo:
         service: ghcr-registry
-        resource: "ghcr.io/aserto-templates/policy-todo-rebac:latest"
+        resource: "ghcr.io/aserto-policies/policy-todo-rebac:latest"
         persist: false
         config:
           polling:

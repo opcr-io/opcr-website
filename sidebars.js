@@ -14,6 +14,7 @@ module.exports = {
       items: [
         'cli/download',
         'cli/login',
+        'cli/create',
         'cli/build',
         'cli/images',
         'cli/tag',
