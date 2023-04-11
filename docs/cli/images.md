@@ -12,8 +12,6 @@ policy images
 
 ## Options
 
-`-r, --remote`: list images stored in a remote registry
-
 `-e, --show-empty`: show policies with no images
 
 ## Example
@@ -24,10 +22,4 @@ $ policy images
 |          REPOSITORY          |  TAG  | SIZE  |  CREATED AT  |
 |------------------------------|-------|-------|--------------|
 | ghcr.io/ogazitt/peoplefinder | 1.0.0 | 555 B | 1 minute ago |
-
-$ policy images --remote
-
-|          REPOSITORY          |  TAG  | 
-|------------------------------|-------|
-| ghcr.io/ogazitt/peoplefinder | 1.0.0 | 
 ```
