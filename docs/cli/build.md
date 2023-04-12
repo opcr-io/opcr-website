@@ -27,3 +27,16 @@ digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
 Tagging image.
 reference: ghcr.io/ogazitt/peoplefinder:1.0.0
 ```
+
+Note: The tag is optional. If omitted, the image is created as default:latest, which does not follow the accepted OCI format `<registry>/<organization-name>/<repository-name>:<tag>`, to prevent pushing the image to a registry without an appropriate tag.
+
+```bash
+$ policy build .
+
+
+Created new image.
+digest: sha256:84dbd4e3b5572dd2f23c3c987c89443fdcb57af87d714ea296fc552192fb17e9
+
+Tagging image.
+reference: ghcr.io/default:latest
+```
