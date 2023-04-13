@@ -71,8 +71,12 @@ Then login using `policy` the same way you would login to `docker`:
 cat KEY-FILE | policy login -s gcr.io -u _json_key --password-stdin 
 ```
 
-** Important **
+## Docker credential helpers
+:::caution Note
 Version 0.2.0 of the policy CLI adds support for [docker credential helpers](https://github.com/docker/docker-credential-helpers) to securely store credentials. Credential helpers are configured in `~/.policy/config.json`.
+
+Login credentials that were saved with previous versions of the policy CLI will need to be updated.
+:::
 
 ### On Windows
 To use the credential manager on Windows:
