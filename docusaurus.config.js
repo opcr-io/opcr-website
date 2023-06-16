@@ -24,7 +24,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           expand: false, // Allows your variables to be "expanded" for reusability within your .env file
           defaults: false, //  Adds support for dotenv-defaults. If set to true, uses ./.env.defaults
       }
-    ]
+    ],
+    ['@docusaurus/plugin-google-tag-manager',
+      {
+        containerId:
+            process.env.REACT_APP_GOOGLE_TAG_MANAGER_ID ?? '_',
+      }
+    ],
   ],
 
   presets: [
