@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Open Policy Containers',
   tagline: 'A Docker-inspired workflow for OPA policies',
-  url: 'https://opcr.io',
+  url: 'https://openpolicycontainers.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -56,11 +56,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           changefreq: 'weekly',
           priority: 0.5,
         },
-        googleAnalytics: {
-          trackingID: process.env.REACT_APP_GA_TRACKING_ID || '_',
-          // Optional fields.
-          anonymizeIP: true, // Should IPs be anonymized?
-        },    
       }),
     ],
   ],
