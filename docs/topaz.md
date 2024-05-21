@@ -74,3 +74,5 @@ For registries that only support basic authentication, you can pass the credenti
         scheme: "Basic"
         token: "<username>:<password>"
 ```
+
+For more information on how to configure Topaz with a private policy image, refer to the Topaz [configuration](https://www.topaz.sh/docs/policies/configuration) docs.
