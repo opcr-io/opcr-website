@@ -15,7 +15,7 @@
     "scrape": "./scripts/scrape.sh"
   },
   "dependencies": {
-    "@babel/plugin-syntax-import-assertions": "^7.22.5",
+    "@babel/plugin-syntax-import-assertions": "^7.26.0",
     "@docusaurus/core": "^2.4.1",
     "@docusaurus/module-type-aliases": "^2.4.1",
     "@docusaurus/plugin-google-tag-manager": "^2.4.1",
