@@ -29,8 +29,9 @@ winget install OpenPolicyContainers.Policy
 
 ## Go
 
-You can get `policy` via a GO install
+You can get `policy` via a GO install.
+> NOTE: this method requires the **latest** golang version to be installed locally!
 
 ```shell
-go get -u github.com/opcr-io/policy
+go install github.com/opcr-io/policy/cmd/policy
 ```
