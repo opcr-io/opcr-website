@@ -17,7 +17,7 @@ These are available as tarballs in the [release](https://github.com/opcr-io/poli
 You can install `policy` via homebrew for macOS or LinuxBrew for Linux:
 
 ```shell
-brew install opcr-io/tap/policy
+brew install -cask policy
 ```
 
 ## WinGet (Windows)
